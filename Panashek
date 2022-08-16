@@ -1,0 +1,213 @@
+$ apt update && apt upgrade
+Ign:2 https://dl.bintray.com/grimler/game-packages-24 games InRelease
+Ign:3 https://dl.bintray.com/grimler/science-packages-24 science InRelease
+Err:4 https://dl.bintray.com/grimler/game-packages-24 games Release
+  502  Bad Gateway
+Err:5 https://dl.bintray.com/grimler/science-packages-24 science Release
+  502  Bad Gateway
+Hit:1 https://packages.termux.dev/apt/termux-main stable InRelease
+Reading package lists... Done
+E: The repository 'https://dl.bintray.com/grimler/game-packages-24 games Release' does not have a Release file.
+N: Metadata integrity can't be verified, repository is disabled now.
+N: Possible cause: repository is under maintenance or down (wrong sources.list URL?).
+E: The repository 'https://dl.bintray.com/grimler/science-packages-24 science Release' does not have a Release file.
+N: Metadata integrity can't be verified, repository is disabled now.
+N: Possible cause: repository is under maintenance or down (wrong sources.list URL?).
+$ pkg install git -y
+Checking availability of current mirror: ok
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+git is already the newest version (2.37.1).
+0 upgraded, 0 newly installed, 0 to remove and 50 not upgraded.
+$ apt install nodejs -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  c-ares libicu
+Suggested packages:
+  clang make pkg-config python
+The following NEW packages will be installed:
+  c-ares libicu nodejs
+0 upgraded, 3 newly installed, 0 to remove and 50 not upgraded.
+Need to get 17.3 MB/17.4 MB of archives.
+After this operation, 82.9 MB of additional disk space will be used.
+Get:1 https://packages.termux.dev/apt/termux-main stable/main arm libicu arm 71.1-1 [9293 kB]
+Err:1 https://packages.termux.dev/apt/termux-main stable/main arm libicu arm 71.1-1
+  transfer closed with 4099753 bytes remaining to read
+Get:2 https://packages.termux.dev/apt/termux-main stable/main arm nodejs arm 18.7.0-1 [7972 kB]
+Err:2 https://packages.termux.dev/apt/termux-main stable/main arm nodejs arm 18.7.0-1
+  transfer closed with 7087457 bytes remaining to read
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/libi/libicu/libicu_71.1-1_arm.deb  transfer closed with 4099753 bytes remaining to read
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/n/nodejs/nodejs_18.7.0-1_arm.deb  transfer closed with 7087457 bytes remaining to read
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+$ apt install ffmpeg -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  fontconfig freetype fribidi game-music-emu giflib glib
+  harfbuzz libaom libass libbluray libdav1d libevent
+  libexpat libffi libgnutls libgraphite libidn2
+  libjpeg-turbo libmp3lame libnettle libogg libopus
+  libpng librav1e libsoxr libtheora libtiff libudfread
+  libunistring libuuid libvidstab libvorbis libvpx
+  libwebp libx264 libx265 libxml2 ttf-dejavu unbound
+  xvidcore zstd
+The following NEW packages will be installed:
+  ffmpeg fontconfig freetype fribidi game-music-emu
+  giflib glib harfbuzz libaom libass libbluray libdav1d
+  libevent libexpat libffi libgnutls libgraphite libidn2
+  libjpeg-turbo libmp3lame libnettle libogg libopus
+  libpng librav1e libsoxr libtheora libtiff libudfread
+  libunistring libuuid libvidstab libvorbis libvpx
+  libwebp libx264 libx265 libxml2 ttf-dejavu unbound
+  xvidcore zstd
+0 upgraded, 42 newly installed, 0 to remove and 50 not upgraded.
+Need to get 24.1 MB of archives.
+After this operation, 89.5 MB of additional disk space will be used.
+Get:1 https://packages.termux.dev/apt/termux-main stable/main arm libpng arm 1.6.37-3 [192 kB]
+Get:2 https://packages.termux.dev/apt/termux-main stable/main arm freetype arm 2.12.1 [377 kB]
+Get:3 https://packages.termux.dev/apt/termux-main stable/main arm game-music-emu arm 0.6.3-1 [113 kB]
+Get:4 https://packages.termux.dev/apt/termux-main stable/main arm libaom arm 3.4.0-1 [1730 kB]
+Get:5 https://packages.termux.dev/apt/termux-main stable/main arm libxml2 arm 2.9.14 [804 kB]
+Get:6 https://packages.termux.dev/apt/termux-main stable/main arm libuuid arm 1.0.3-5 [6920 B]
+Get:7 https://packages.termux.dev/apt/termux-main stable/main arm ttf-dejavu all 2.37-8 [2468 kB]
+Get:8 https://packages.termux.dev/apt/termux-main stable/main arm fontconfig arm 2.14.0 [110 kB]
+Get:9 https://packages.termux.dev/apt/termux-main stable/main arm libffi arm 3.4.2 [32.8 kB]
+Get:10 https://packages.termux.dev/apt/termux-main stable/main arm glib arm 2.72.2 [1139 kB]
+Get:11 https://packages.termux.dev/apt/termux-main stable/main arm fribidi arm 1.0.12 [35.5 kB]
+Get:12 https://packages.termux.dev/apt/termux-main stable/main arm libgraphite arm 1.3.14-2 [66.5 kB]
+Get:13 https://packages.termux.dev/apt/termux-main stable/main arm harfbuzz arm 5.1.0-1 [607 kB]
+Get:14 https://packages.termux.dev/apt/termux-main stable/main arm libass arm 0.16.0 [74.5 kB]
+Get:15 https://packages.termux.dev/apt/termux-main stable/main arm libudfread arm 1.1.2 [13.8 kB]
+Get:16 https://packages.termux.dev/apt/termux-main stable/main arm libbluray arm 1.3.1 [102 kB]
+Get:17 https://packages.termux.dev/apt/termux-main stable/main arm libdav1d arm 1.0.0 [251 kB]
+Get:18 https://packages.termux.dev/apt/termux-main stable/main arm libnettle arm 3.7.3 [383 kB]
+Get:19 https://packages.termux.dev/apt/termux-main stable/main arm libunistring arm 1.0 [514 kB]
+Get:20 https://packages.termux.dev/apt/termux-main stable/main arm libidn2 arm 2.3.2 [85.4 kB]
+Get:21 https://packages.termux.dev/apt/termux-main stable/main arm libevent arm 2.1.12-1 [192 kB]
+Err:22 https://packages.termux.dev/apt/termux-main stable/main arm libexpat arm 2.4.8
+  Connection died, tried 5 times before giving up
+Get:23 https://packages.termux.dev/apt/termux-main stable/main arm unbound arm 1.15.0-1 [555 kB]
+Get:24 https://packages.termux.dev/apt/termux-main stable/main arm libgnutls arm 3.7.6 [690 kB]
+Get:25 https://packages.termux.dev/apt/termux-main stable/main arm libmp3lame arm 3.100-4 [109 kB]
+Get:26 https://packages.termux.dev/apt/termux-main stable/main arm libopus arm 1.3.1-5 [165 kB]
+Get:27 https://packages.termux.dev/apt/termux-main stable/main arm librav1e arm 0.5.1 [512 kB]
+Get:28 https://packages.termux.dev/apt/termux-main stable/main arm libsoxr arm 0.1.3-3 [221 kB]
+Get:29 https://packages.termux.dev/apt/termux-main stable/main arm libogg arm 1.3.5 [190 kB]
+Get:30 https://packages.termux.dev/apt/termux-main stable/main arm libvorbis arm 1.3.7-1 [258 kB]
+Get:31 https://packages.termux.dev/apt/termux-main stable/main arm libtheora arm 1.1.1-1 [143 kB]
+Get:32 https://packages.termux.dev/apt/termux-main stable/main arm libvpx arm 1:1.12.0-1 [630 kB]
+Get:33 https://packages.termux.dev/apt/termux-main stable/main arm libvidstab arm 1.1.0-2 [203 kB]
+Get:34 https://packages.termux.dev/apt/termux-main stable/main arm giflib arm 5.2.1-2 [19.2 kB]
+Get:35 https://packages.termux.dev/apt/termux-main stable/main arm libjpeg-turbo arm 2.1.3 [271 kB]
+Get:36 https://packages.termux.dev/apt/termux-main stable/main arm zstd arm 1.5.2-2 [271 kB]
+Get:37 https://packages.termux.dev/apt/termux-main stable/main arm libtiff arm 4.3.0-3 [511 kB]
+Get:38 https://packages.termux.dev/apt/termux-main stable/main arm libwebp arm 1.2.4 [196 kB]
+Get:39 https://packages.termux.dev/apt/termux-main stable/main arm libx264 arm 1:0.161.3049-2 [366 kB]
+Err:40 https://packages.termux.dev/apt/termux-main stable/main arm libx265 arm 3.5-4
+  Connection died, tried 5 times before giving up
+Get:41 https://packages.termux.dev/apt/termux-main stable/main arm xvidcore arm 1.3.7 [137 kB]
+Get:42 https://packages.termux.dev/apt/termux-main stable/main arm ffmpeg arm 5.1 [8741 kB]
+Err:42 https://packages.termux.dev/apt/termux-main stable/main arm ffmpeg arm 5.1
+  transfer closed with 5677853 bytes remaining to read
+Fetched 14.7 MB in 4min 21s (56.4 kB/s)
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/libe/libexpat/libexpat_2.4.8_arm.deb  Connection died, tried 5 times before giving up
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/libx/libx265/libx265_3.5-4_arm.deb  Connection died, tried 5 times before giving up
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/f/ffmpeg/ffmpeg_5.1_arm.deb  transfer closed with 5677853 bytes remaining to read
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+$ apt install imagemagick -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  brotli fftw fontconfig freetype fribidi gdk-pixbuf
+  giflib glib harfbuzz libandroid-shmem libaom libcairo
+  libdav1d libde265 libffi libgraphite libheif
+  libjpeg-turbo libjxl liblzo libpixman libpng librav1e
+  librsvg libtiff libuuid libwebp libx11 libx265 libxau
+  libxcb libxdmcp libxext libxft libxml2 libxrender
+  littlecms openjpeg pango ttf-dejavu zstd
+Recommended packages:
+  xorg-xauth
+The following NEW packages will be installed:
+  brotli fftw fontconfig freetype fribidi gdk-pixbuf
+  giflib glib harfbuzz imagemagick libandroid-shmem
+  libaom libcairo libdav1d libde265 libffi libgraphite
+  libheif libjpeg-turbo libjxl liblzo libpixman libpng
+  librav1e librsvg libtiff libuuid libwebp libx11 libx265
+  libxau libxcb libxdmcp libxext libxft libxml2
+  libxrender littlecms openjpeg pango ttf-dejavu zstd
+0 upgraded, 42 newly installed, 0 to remove and 50 not upgraded.
+Need to get 16.7 MB/26.3 MB of archives.
+After this operation, 109 MB of additional disk space will be used.
+Get:1 https://packages.termux.dev/apt/termux-main stable/main arm brotli arm 1.0.9-1 [305 kB]
+Get:2 https://packages.termux.dev/apt/termux-main stable/main arm fftw arm 3.3.10-3 [726 kB]
+Get:3 https://packages.termux.dev/apt/termux-main stable/main arm gdk-pixbuf arm 2.42.9 [111 kB]
+Get:4 https://packages.termux.dev/apt/termux-main stable/main arm liblzo arm 2.10-3 [72.5 kB]
+Get:5 https://packages.termux.dev/apt/termux-main stable/main arm libpixman arm 0.40.0-2 [141 kB]
+Get:6 https://packages.termux.dev/apt/termux-main stable/main arm libandroid-shmem arm 0.4 [6728 B]
+Get:7 https://packages.termux.dev/apt/termux-main stable/main arm libxau arm 1.0.9-9 [8040 B]
+Get:8 https://packages.termux.dev/apt/termux-main stable/main arm libxdmcp arm 1.1.3-10 [23.2 kB]
+Get:9 https://packages.termux.dev/apt/termux-main stable/main arm libxcb arm 1.15 [878 kB]
+Get:10 https://packages.termux.dev/apt/termux-main stable/main arm libx11 arm 1.7.2-1 [1769 kB]
+Get:11 https://packages.termux.dev/apt/termux-main stable/main arm libxext arm 1.3.4-11 [96.6 kB]
+Get:12 https://packages.termux.dev/apt/termux-main stable/main arm libxrender arm 0.9.10-14 [21.9 kB]
+Get:13 https://packages.termux.dev/apt/termux-main stable/main arm libcairo arm 1.16.0-9 [423 kB]
+Get:14 https://packages.termux.dev/apt/termux-main stable/main arm libde265 arm 1.0.8-4 [149 kB]
+Get:15 https://packages.termux.dev/apt/termux-main stable/main arm libx265 arm 3.5-4 [559 kB]
+Get:16 https://packages.termux.dev/apt/termux-main stable/main arm libheif arm 1.12.0-6 [150 kB]
+Get:17 https://packages.termux.dev/apt/termux-main stable/main arm libjxl arm 0.6.1-1 [715 kB]
+Get:18 https://packages.termux.dev/apt/termux-main stable/main arm libxft arm 2.3.3-13 [37.2 kB]
+Get:19 https://packages.termux.dev/apt/termux-main stable/main arm pango arm 1.50.7 [214 kB]
+Get:20 https://packages.termux.dev/apt/termux-main stable/main arm librsvg arm 2.54.3 [2566 kB]
+Get:21 https://packages.termux.dev/apt/termux-main stable/main arm littlecms arm 2.13.1-1 [125 kB]
+Get:22 https://packages.termux.dev/apt/termux-main stable/main arm openjpeg arm 2.5.0 [149 kB]
+Get:23 https://packages.termux.dev/apt/termux-main stable/main arm imagemagick arm 7.1.0.43 [7487 kB]
+Err:23 https://packages.termux.dev/apt/termux-main stable/main arm imagemagick arm 7.1.0.43
+  transfer closed with 3866953 bytes remaining to read
+Fetched 9248 kB in 2min 56s (52.4 kB/s)
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/i/imagemagick/imagemagick_7.1.0.43_arm.deb  transfer closed with 3866953 bytes remaining to read
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+$ git clone https://github.com/itsajaygaur/tokio-wabot
+Cloning into 'tokio-wabot'...
+remote: Enumerating objects: 6442, done.
+Receiving objects:   4% (258/6442), 124.01 KiB | 52.00 KiB/Receiving objects:   4% (311/6442), 164.01 KiB | 54.00 KiB/Receiving objects:   5% (323/6442), 164.01 KiB | 54.00 KiB/Receiving objects:   6% (387/6442), 212.01 KiB | 57.00 KiB/Receiving objects:   7% (451/6442), 212.01 KiB | 57.00 KiB/Receiving objects:   7% (474/6442), 212.01 KiB | 57.00 KiB/Receiving objects:   8% (516/6442), 268.01 KiB | 63.00 KiB/Receiving objects:   9% (580/6442), 268.01 KiB | 63.00 KiB/Receiving objects:  10% (645/6442), 332.01 KiB | 70.00 KiB/Receiving objects:  11% (709/6442), 332.01 KiB | 70.00 KiB/Receiving objects:  11% (710/6442), 332.01 KiB | 70.00 KiB/Receiving objects:  12% (774/6442), 420.01 KiB | 79.00 KiB/Receiving objects:  13% (838/6442), 420.01 KiB | 79.00 KiB/Receiving objects:  14% (902/6442), 420.01 KiB | 79.00 KiB/Receiving objects:  15% (967/6442), 420.01 KiB | 79.00 KiB/Receiving objects:  16% (1031/6442), 516.01 KiB | 95.00 KiBReceiving objects:  17% (1096/6442), 516.01 KiB | 95.00 KiBReceiving objects:  17% (1154/6442), 516.01 KiB | 95.00 KiBReceiving objects:  18% (1160/6442), 516.01 KiB | 95.00 KiBReceiving objects:  19% (1224/6442), 596.01 KiB | 106.00 KiReceiving objects:  20% (1289/6442), 596.01 KiB | 106.00 KiReceiving objects:  21% (1353/6442), 596.01 KiB | 106.00 KiReceiving objects:  22% (1418/6442), 596.01 KiB | 106.00 KiReceiving objects:  23% (1482/6442), 596.01 KiB | 106.00 KiReceiving objects:  24% (1547/6442), 596.01 KiB | 106.00 KiReceiving objects:  25% (1611/6442), 692.01 KiB | 119.00 KiReceiving objects:  26% (1675/6442), 692.01 KiB | 119.00 KiReceiving objects:  27% (1740/6442), 692.01 KiB | 119.00 KiReceiving objects:  27% (1776/6442), 692.01 KiB | 119.00 KiReceiving objects:  28% (1804/6442), 692.01 KiB | 119.00 KiReceiving objects:  29% (1869/6442), 692.01 KiB | 119.00 KiReceiving objects:  29% (1910/6442), 828.01 KiB | 121.00 KiReceiving objects:  30% (1933/6442), 828.01 KiB | 121.00 KiReceiving objects:  31% (1998/6442), 828.01 KiB | 121.00 KiReceiving objects:  32% (2062/6442), 828.01 KiB | 121.00 KiReceiving objects:  33% (2126/6442), 884.01 KiB | 127.00 KiReceiving objects:  33% (2131/6442), 1.00 MiB | 149.00 KiB/Receiving objects:  33% (2139/6442), 1.20 MiB | 163.00 KiB/Receiving objects:  33% (2142/6442), 1.25 MiB | 142.00 KiB/Receiving objects:  33% (2143/6442), 1.40 MiB | 139.00 KiB/Receiving objects:  33% (2144/6442), 1.45 MiB | 119.00 KiB/Receiving objects:  33% (2146/6442), 1.53 MiB | 124.00 KiB/Receiving objects:  33% (2146/6442), 1.68 MiB | 115.00 KiB/Receiving objects:  33% (2148/6442), 1.78 MiB | 92.00 KiB/sReceiving objects:  33% (2150/6442), 1.90 MiB | 115.00 KiB/Receiving objects:  33% (2150/6442), 2.00 MiB | 105.00 KiB/Receiving objects:  33% (2152/6442), 2.16 MiB | 113.00 KiB/Receiving objects:  33% (2153/6442), 2.16 MiB | 113.00 KiB/Receiving objects:  33% (2154/6442), 2.25 MiB | 102.00 KiB/Receiving objects:  33% (2161/6442), 2.45 MiB | 127.00 KiB/Receiving objects:  33% (2172/6442), 2.55 MiB | 110.00 KiB/Receiving objects:  34% (2191/6442), 2.55 MiB | 110.00 KiB/Receiving objects:  35% (2255/6442), 2.55 MiB | 110.00 KiB/Receiving objects:  36% (2320/6442), 2.55 MiB | 110.00 KiB/Receiving objects:  37% (2384/6442), 2.55 MiB | 110.00 KiB/Receiving objects:  37% (2425/6442), 2.68 MiB | 112.00 KiB/Receiving objects:  38% (2448/6442), 2.68 MiB | 112.00 KiB/Receiving objects:  39% (2513/6442), 2.68 MiB | 112.00 KiB/Receiving objects:  40% (2577/6442), 2.68 MiB | 112.00 KiB/Receiving objects:  41% (2642/6442), 2.71 MiB | 104.00 KiB/Receiving objects:  42% (2706/6442), 2.71 MiB | 104.00 KiB/Receiving objects:  42% (2748/6442), 2.71 MiB | 104.00 KiB/Receiving objects:  43% (2771/6442), 2.71 MiB | 104.00 KiB/Receiving objects:  44% (2835/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  45% (2899/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  46% (2964/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  47% (3028/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  48% (3093/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  49% (3157/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  50% (3221/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  51% (3286/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  52% (3350/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  53% (3415/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  54% (3479/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  55% (3544/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  56% (3608/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  57% (3672/6442), 2.74 MiB | 101.00 KiB/Receiving objects:  57% (3724/6442), 2.79 MiB | 97.00 KiB/sReceiving objects:  92% (5966/6442), 3.55 MiB | 101.00 KiB/Receiving objects:  92% (5972/6442), 3.61 MiB | 90.00 KiB/sReceiving objects:  92% (5979/6442), 3.86 MiB | 135.00 KiB/Receiving objects:  93% (5992/6442), 3.89 MiB | 129.00 KiB/Receiving objects:  94% (6056/6442), 4.07 MiB | 156.00 KiB/Receiving objects:  94% (6064/6442), 4.14 MiB | 156.00 KiB/Receiving objects:  95% (6120/6442), 4.14 MiB | 156.00 KiB/Receiving objects:  95% (6154/6442), 4.22 MiB | 158.00 KiB/Receiving objects:  96% (6185/6442), 4.29 MiB | 160.00 KiB/Receiving objects:  97% (6249/6442), 4.29 MiB | 160.00 KiB/Receiving objects:  98% (6314/6442), 4.29 MiB | 160.00 KiB/remote: Total 6442 (delta 0), reused 0 (delta 0), pack-reused 6442
+Receiving objects:  99% (6378/6442), 4.29 MiB | 160.00 KiB/Receiving objects: 100% (6442/6442), 4.29 MiB | 160.00 KiB/Receiving objects: 100% (6442/6442), 4.34 MiB | 114.00 KiB/s, done.
+Resolving deltas: 100% (4354/4354), done.
+$ cd tokio-wabot
+$ ☘npm install
+No command ☘npm found, did you mean:
+ Command npm in package nodejs
+ Command npm in package nodejs-lts
+$ npm install
+The program npm is not installed. Install it by executing:
+ pkg install nodejs
+or
+ pkg install nodejs-lts
+$ pkg install nodejs
+Checking availability of current mirror: ok
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  c-ares libicu
+Suggested packages:
+  clang make pkg-config python
+The following NEW packages will be installed:
+  c-ares libicu nodejs
+0 upgraded, 3 newly installed, 0 to remove and 50 not upgraded.
+Need to get 17.3 MB/17.4 MB of archives.
+After this operation, 82.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 https://packages.termux.dev/apt/termux-main stable/main arm libicu arm 71.1-1 [9293 kB]
+Err:1 https://packages.termux.dev/apt/termux-main stable/main arm libicu arm 71.1-1
+  transfer closed with 8998569 bytes remaining to read
+Get:2 https://packages.termux.dev/apt/termux-main stable/main arm nodejs arm 18.7.0-1 [7972 kB]
+Err:2 https://packages.termux.dev/apt/termux-main stable/main arm nodejs arm 18.7.0-1
+  transfer closed with 7251297 bytes remaining to read
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/libi/libicu/libicu_71.1-1_arm.deb  transfer closed with 8998569 bytes remaining to read
+E: Failed to fetch https://packages.termux.dev/apt/termux-main/pool/main/n/nodejs/nodejs_18.7.0-1_arm.deb  transfer closed with 7251297 bytes remaining to read
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
